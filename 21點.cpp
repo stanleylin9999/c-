@@ -16,7 +16,7 @@ int random(){
 	
 	srand(time(NULL));
 	
-	in=rand()%13+1; //ÀH¾÷¶Ã¼Æ1~13 
+	in=rand()%13+1; //éš¨æ©Ÿäº‚æ•¸1~13 
 	
 	if(in==11 || in==12 || in==13){
 		
@@ -32,15 +32,15 @@ int main(){
 	
 	string choice;
 	
-	int gamestatus=1;  //·ígamestatus==0®É¡A¬O¹q¸£©Îª±®a¦ÛÃz ¡A·ígamestatus==1®É¡A¹q¸£©Mª±®a³£¨S¦³¦ÛÃz 
+	int gamestatus=1;  //ç•¶gamestatus==0æ™‚ï¼Œæ˜¯é›»è…¦æˆ–çŽ©å®¶è‡ªçˆ† ï¼Œç•¶gamestatus==1æ™‚ï¼Œé›»è…¦å’ŒçŽ©å®¶éƒ½æ²’æœ‰è‡ªçˆ† 
 	
 	int temp;
 	
-	int playerpoint=0;
+	int playerpoint=0; //çŽ©å®¶é»žæ•¸
 	
-	int dealerpoint=0;
+	int dealerpoint=0; //é›»è…¦é»žæ•¸
 	
-	cout<<"21ÂI¤p¹CÀ¸"<<endl;
+	cout<<"21é»žå°éŠæˆ²"<<endl;
 	
 	
 	
@@ -54,9 +54,9 @@ int main(){
 		
 		if(playerpoint>21){
 			
-			cout<<"§A¦³"<<playerpoint<<"ÂI"<<endl;
+			cout<<"ä½ æœ‰"<<playerpoint<<"é»ž"<<endl;
 			
-			cout<<"§A¿é¤F"<<endl;
+			cout<<"ä½ è¼¸äº†"<<endl;
 			
 			gamestatus=0;
 			
@@ -64,9 +64,9 @@ int main(){
 		}
 		
 		
-		cout<<"¬O§_Ä~Äò©âµP(Y/N)"<<endl;
+		cout<<"æ˜¯å¦ç¹¼çºŒæŠ½ç‰Œ(Y/N)"<<endl;
 		
-		cout<<"§A¦³"<<playerpoint<<"ÂI"<<endl;
+		cout<<"ä½ æœ‰"<<playerpoint<<"é»ž"<<endl;
 		
 		cin>>choice;
 		
@@ -88,7 +88,7 @@ int main(){
 		
 		dealerpoint+=temp;
 		
-		cout<<"¹q¸£¦³"<<dealerpoint<<"ÂI"<<endl;
+		cout<<"é›»è…¦æœ‰"<<dealerpoint<<"é»ž"<<endl;
 		
 		
 		
@@ -96,7 +96,7 @@ int main(){
 			
 			
 			
-			cout<<"§AÄ¹¤F"<<endl;
+			cout<<"ä½ è´äº†"<<endl;
 			
 			gamestatus=0;
 			
@@ -120,23 +120,23 @@ int main(){
 			
 		cout<<"-----------------------------"<<endl;
 			
-		cout<<"¹q¸£¦³"<<dealerpoint<<"ÂI"<<endl;
+		cout<<"é›»è…¦æœ‰"<<dealerpoint<<"é»ž"<<endl;
 		
-		cout<<"§A¦³"<<playerpoint<<"ÂI"<<endl;
+		cout<<"ä½ æœ‰"<<playerpoint<<"é»ž"<<endl;
 		
 		if(dealerpoint>playerpoint){
 			
-			cout<<"§A¿é¤F"<<endl; 
+			cout<<"ä½ è¼¸äº†"<<endl; 
 		}
 		
 		else if(dealerpoint<playerpoint){
 			
-			cout<<"§AÄ¹¤F"<<endl; 
+			cout<<"ä½ è´äº†"<<endl; 
 		}
 		
 		else{
 			
-			cout<<"¥­¤â"<<endl;
+			cout<<"å¹³æ‰‹"<<endl;
 		}
 			
 			
