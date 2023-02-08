@@ -35,7 +35,7 @@ int main(){
 			
 			void getdata(){
 				
-				cout<<"©m¦W"<<":";
+				cout<<"å§“å"<<":";
 				
 				cout<<this->name<<",";
 				
@@ -43,7 +43,7 @@ int main(){
 				
 				cout<<this->id<<",";
 				
-				cout<<"Á~¤ô"<<":";
+				cout<<"è–ªæ°´"<<":";
 				
 				cout<<this->salary<<",";
 				
@@ -77,11 +77,11 @@ int main(){
 			
 			void getproject(){
 				
-				cout<<"±Mªø"<<":";
+				cout<<"å°ˆé•·"<<":";
 				
 				cout<<this->speciality<<",";
 				
-				cout<<"±M®×"<<":"; 
+				cout<<"å°ˆæ¡ˆ"<<":"; 
 				
 				cout<<this->project<<endl;
 				
@@ -113,7 +113,7 @@ int main(){
 			
 			void getworktime(){
 				
-				cout<<"¤u§@®É¼Æ"<<":"; 
+				cout<<"å·¥ä½œæ™‚æ•¸"<<":"; 
 				
 				cout<<this->worktime<<endl;
 				
@@ -157,15 +157,15 @@ int main(){
 			
 			void getinsurance(){
 				
-				cout<<"Â¾·~«OÀI"<<":";
+				cout<<"è·æ¥­ä¿éšª"<<":";
 				 
 				if(this->insurance==1){
 					
-					cout<<"¦³"<<endl; 
+					cout<<"æœ‰"<<endl; 
 				}
 				else{
 					
-					cout<<"µL"<<endl;
+					cout<<"ç„¡"<<endl;
 				}
 				
 				return;
@@ -190,7 +190,7 @@ int main(){
 			
 			void setid(int people){
 				
-				cout<<"¤UÄÝ­û¤uid";
+				cout<<"è¼¸å…¥ä¸‹å±¬å“¡å·¥id"<<endl;
 				
 				this->people=people;
 				
@@ -206,11 +206,17 @@ int main(){
 			
 			void getid(){
 				
-				
+				cout<<"ä¸‹å±¬å“¡å·¥id:";
 				
 				for(int i=0;i<people;i++){
 					
-					cout<<*(ptr+i)<<",";
+					if(i==people-1){
+						cout<<*(ptr+i);
+					}
+					else{
+						cout<<*(ptr+i)<<",";
+					}
+					
 				}
 				
 				delete[] ptr;
@@ -230,7 +236,7 @@ int main(){
 	
 	a.setdata("Andy","001",45000);
 	
-	a.setproject("¸ê®Æ®wºÞ²z","A");
+	a.setproject("è³‡æ–™åº«ç®¡ç†","A");
 	
 	a.getdata();
 	
